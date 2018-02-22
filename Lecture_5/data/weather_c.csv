@@ -1,0 +1,17 @@
+Day,City,Temperature Night,Humidity Night,Measured By
+1/1/18,Cambridge,-9,27,Alan
+1/2/18,Cambridge,-5,37,Alan
+1/3/18,Cambridge,0,41,Alan
+1/4/18,Cambridge,1,91,Alan
+,,,,
+1/2/18,Barcelona,21,,Jane
+1/3/18,Barcelona,25,,Jane
+1/4/18,Barcelona,,41,Jane
+1/1/18,Belgrade,,55,Jane
+,,,,
+1/3/18,Belgrade,11,51,Jane
+1/4/18,Belgrade,3,60,Jane
+1/1/18,Bordeaux,11,71,
+1/2/18,Bordeaux,11,91,Luka
+1/3/18,Bordeaux,11,80,Luka
+1/4/18,Bordeaux,11,70,Luka
