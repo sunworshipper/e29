@@ -1,0 +1,12 @@
+Account,Employee,Manager,Product,Revenue,Status,Expenses
+Fidelity,Ann,Rick,Advertising 1,,In Negotiation,0
+Fidelity,Maria,Rick,Advertising 1,10000,Completed,400
+Fidelity,Saul,Morty,Advertising 1,5000,Completed,800
+Fidelity,Sam,Morty,Advertising 2,100000,Completed,750
+Fidelity,Kyle,Morty,Advertising 2,20000,Completed,1000
+Bank Of America,Kyle,Morty,Advertising 2,,In Negotiation,1450
+Bank Of America,Kyle,Morty,Advertising 3,20000,Completed,1560
+Citizen,Sam,Morty,Advertising 3,20000,Completed,300
+Citizen,Maria,Rick,Advertising 3,,In Negotiation,400
+Vanguard,Maria,Rick,Advertising 3,25000,Completed,500
+Vanguard,Tijana,Rick,Advertising 3,25000,Completed,400
