@@ -1,0 +1,338 @@
+/* Nenad Svrzikapa CSCI e-29
+Note that the elements are separated on purpose for individual editing.
+The idea is to override the defaults with the custom file.
+Feel free to make your own theme and if you think it's awesome please share it!
+Some of my CSS problems were fixed by : Kelly Wang
+ */
+
+
+/* Background of notebook (not slide mode)*/
+
+
+body.rise-enabled  {
+    background-color: #222222 !important;
+}
+
+/* Background of slide*/
+div.slide-background.present {
+    background-color: #222222 !important;
+  }
+
+/* Background of a div with class foo */
+div.foo {
+    background-color: red;
+}
+
+/* Reveal Navigator Controls Styling */
+.reveal .controls .navigate-left {
+  top: 42px;
+  border-right-width: 22px;
+  border-right-color: #50a4d5 !important; }
+
+.reveal .controls .navigate-right {
+  left: 74px;
+  top: 42px;
+  border-left-width: 22px;
+  border-left-color: #95bb6a !important; }
+
+.reveal .controls .navigate-up {
+  opacity: 0.7 !important;
+  left: 42px;
+  border-bottom-width: 22px;
+  border-bottom-color: #f7cb6a !important; }
+
+.reveal .controls .navigate-down {
+  opacity: 0.7 !important;
+  left: 42px;
+  top: 74px;
+  border-top-width: 22px;
+  border-top-color: #982b33 !important; }
+
+/* reveal heading Styling
+Note: if it has .reveal before it generally means in slide mode
+You can change the appearance of the notebook before it executes by omitting
+.reveal and accessing directly i.e. h1
+*/
+/*White Headings in present mode: Default if no class specified*/
+
+.reveal h1 {
+  color:white !important;
+}
+.reveal h2 {
+  color:white !important;
+}
+.reveal h3 {
+  color:white !important;
+}
+.reveal h4 {
+ color: white !important;
+}
+.reveal h5 {
+ color: white !important;
+}
+
+/*YELLOW Headings in present mode*/
+.reveal h1.yellow {
+  color:#f7cb6a !important;
+}
+.reveal h2.yellow {
+  color:#f7cb6a !important;
+}
+.reveal h3.yellow {
+  color:#f7cb6a !important;
+}
+.reveal h4.yellow {
+ color: #f7cb6a !important;
+}
+.reveal h5.yellow {
+ color: #f7cb6a !important;
+}
+/*RED Headings in present mode*/
+.reveal h1.red {
+  color:#982b33 !important;
+}
+.reveal h2.red {
+  color:#982b33 !important;
+}
+.reveal h3.red {
+  color:#982b33 !important;
+}
+.reveal h4.red {
+ color: #982b33 !important;
+}
+.reveal h5.red {
+ color: #982b33 !important;
+}
+/*GREY Headings in present mode*/
+.reveal h1.grey {
+  color:#a7aaa9 !important;
+}
+.reveal h2.grey {
+  color:#a7aaa9 !important;
+}
+.reveal h3.grey {
+  color:#a7aaa9 !important;
+}
+.reveal h4.grey {
+ color: #a7aaa9 !important;
+}
+.reveal h5.grey {
+ color: #a7aaa9 !important;
+}
+/*BLUE Headings in present mode*/
+.reveal h1.blue {
+  color:#50a4d5 !important;
+}
+.reveal h2.blue {
+  color:#50a4d5 !important;
+}
+.reveal h3.blue {
+  color:#50a4d5 !important;
+}
+.reveal h4.blue {
+ color: #50a4d5 !important;
+}
+.reveal h5.blue {
+ color: #50a4d5 !important;
+}
+/*GREEN Headings in present mode*/
+.reveal h1.green {
+  color:#95bb6a !important;
+}
+.reveal h2.green {
+  color:#95bb6a !important;
+}
+.reveal h3.green {
+  color:#95bb6a !important;
+}
+.reveal h4.green {
+ color: #95bb6a !important;
+}
+.reveal h5.green {
+ color: #95bb6a !important;
+}
+
+
+/* Preformatted text for displaying code in markdown cells */
+.reveal pre {
+  color:black !important;
+  font-size: 110%!important;
+}
+.reveal .CodeMirror pre {
+  color:inherit !important;
+}
+
+/*Tables in reveal for dark*/
+
+.reveal th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #551A8B;
+    color: white;
+    font-size:2em;
+}
+.reveal tr:nth-child(even){
+  background-color: #b19cd9 !important;
+  font-size:2em;
+}
+.reveal tr:nth-child(odd){
+  background-color: white !important;
+  font-size:2em;
+}
+.reveal tr:hover {
+  background-color: #3399ff !important;
+  color: white;
+  font-size:2em;
+}
+
+
+
+/* In[n]: */
+.reveal div.input_prompt {
+  color:#f7cb6a !important;
+}
+
+/* reveal custom paragraph tags */
+.reveal p{
+  color: white;
+}
+.reveal li{
+  color: white !important;
+  list-style: none !important;
+  font-size: 0.8em !important;
+
+}
+
+ .reveal li::before {
+  color: #982b33;
+  /* color of bullet or square */
+
+  content: "\25B6";
+  /* Unicode of character to precede the list item */
+
+  font-size: 0.8em;
+  /* em or %*/
+
+  padding-right: 1.1225em;
+  /* use em*/
+
+  position: relative;
+  top: 0em;
+  /* use em or % */
+
+}
+
+/* Deals with distance of Title Subtitle and HR makes it closer*/
+.reveal p + ul {
+    margin-top: -10px;
+}
+.reveal h3 + p {
+    margin-top: -30px;
+}
+.reveal h2 + p {
+    margin-top: -30px;
+}
+.reveal p + hr {
+    margin-top: -30px;
+}
+.reveal p + h3 {
+    margin-top: -30px;
+}
+
+.reveal p + li {
+    margin-top: -10px;
+}
+.reveal ul + h3 {
+    margin-top: 0px;
+}
+/* REVEAL URL */
+.reveal a{
+  color:#50a4d5;
+}
+
+.reveal center{
+  color:white !important;
+}
+
+
+
+
+
+
+.reveal p.white{
+  color: white;
+}
+.reveal p.yellow{
+  color:#f7cb6a;
+}
+.reveal p.red{
+  color: #982b33;
+}
+.reveal p.grey{
+  color: #a7aaa9;
+}
+.reveal p.blue{
+  color: #50a4d5;
+}
+.reveal p.green{
+  color: #95bb6a;
+}
+
+/* text align */
+.reveal p.center{
+  text-align: center;
+}
+
+/* Color of <hr> line */
+hr {
+ border-top: 3px solid #982b33;
+}
+
+
+/* Blockquote */
+
+.reveal blockquote {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 45px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+  color: white;
+  border-left: 3px solid #95bb6a !important;
+}
+
+.reveal footer {
+  color: #95bb6a;
+}
+
+/*REVEAL SPAN */
+.reveal span.white {
+  color:white;
+}
+.reveal span.yellow {
+  color:#f7cb6a;
+}
+.reveal span.red {
+  color:#982b33;
+}
+.reveal span.grey {
+  color:#a7aaa9;
+}
+.reveal span.blue {
+  color:#50a4d5;
+}
+.reveal span.green {
+  color:#95bb6a;
+}
+
+
+.reveal output_subarea{
+  color:white !important;
+  background-color: white !important;
+}
+.output_subarea{
+  color:white !important;
+  background-color: white !important;
+}
